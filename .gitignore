@@ -1,0 +1,7 @@
+# Ignore virtual environment
+venv/
+
+# Ignore compiled Python files
+*.pyc
+
+# Ignore any other files you don't want to include in the repository
