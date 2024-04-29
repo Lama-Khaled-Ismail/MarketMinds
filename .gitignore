@@ -1,5 +1,5 @@
 # Ignore virtual environment
-marketminds_env/
+backend/venv/
 
 # Ignore compiled Python files
 *.pyc
