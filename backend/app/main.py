@@ -1,10 +1,22 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+import models
+from routers import auth
+from database import SessionLocal, engine
+models.Base.metadata.create_all(bind=engine)
 
 
 app = FastAPI()
 
-origins = ['https://localhost:3000']
+# add routers here
+app.include_router(auth.router)
+
+
+        
+# TODO uncomment later
+'''
+
+origins = ['http://localhost:3000']
 
 app.add_middleware(
     CORSMiddleware,
@@ -14,7 +26,7 @@ app.add_middleware(
     allow_headers=["*"],
     
 )
-
+'''
 
 @app.get("/")
 def read_root():
