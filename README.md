@@ -1,5 +1,4 @@
 # MarketMinds
-# FastAPI Project
 
 ## Overview
 
