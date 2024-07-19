@@ -1,0 +1,6 @@
+pip install -U pip setuptools wheel
+pip install -U spacy
+pip install joblib
+
+# I don’t know if we’ll need that on or not
+python -m spacy download en_core_web_sm
